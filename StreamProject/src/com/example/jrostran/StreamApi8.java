@@ -122,11 +122,16 @@ public class StreamApi8 {
 		address5.setStreetName("");
 		address5.setStreetNumber("");
 		
+		var address6 = new Address();
+		address6.setStreetName("Mischied");
+		address6.setStreetNumber("123");
+		
 		list.add(address1);
 		list.add(address2);
 		list.add(address3);
 		list.add(address4);
 		list.add(address5);
+		list.add(address6);
 		list.stream().forEach(list2::add );
 		
 		list2.stream().forEach(a-> { System.out.println("List2 : StreetName : " + a.getStreetName() + " , StreetNumber :" + a.getStreetNumber() );	 });
